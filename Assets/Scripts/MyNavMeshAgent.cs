@@ -22,7 +22,10 @@ public class MyNavMeshAgent : MonoBehaviour
             transform.forward = toTarget;
             transform.position = Vector3.MoveTowards(transform.position, targetPos, 0.1f);
             if (toTarget.magnitude < 0.8f)
+            {
                 currentNode++;
+            }
+
         }
     }
 
