@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7f01181c4bde9724a846d4e31fd4dc82
+timeCreated: 1492040697
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - trumpWall: {fileID: 1914602151146062, guid: df8a6af4cd2f80c4380ea96279f9e7bf,
+      type: 2}
+  - refillStation: {fileID: 1052424540472408, guid: d64cd2495ddbaaf418098c75970a61df,
+      type: 2}
+  - oilStation: {fileID: 1693574552900304, guid: ea969e1e0e8d7fe448e774c459774cf4,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
