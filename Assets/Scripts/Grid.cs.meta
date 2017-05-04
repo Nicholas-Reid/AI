@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7f01181c4bde9724a846d4e31fd4dc82
-timeCreated: 1492040697
+timeCreated: 1493862905
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
@@ -11,6 +11,12 @@ MonoImporter:
       type: 2}
   - oilStation: {fileID: 1693574552900304, guid: ea969e1e0e8d7fe448e774c459774cf4,
       type: 2}
+  - yellowPole: {fileID: 1381687524224166, guid: f47502cdf86056c4e87ae64e8493ad0c,
+      type: 2}
+  - greenPole: {instanceID: 0}
+  - purplePole: {instanceID: 0}
+  - redPole: {instanceID: 0}
+  - bluePole: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

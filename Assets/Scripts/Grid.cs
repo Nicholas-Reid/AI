@@ -20,6 +20,8 @@ public class Grid : MonoBehaviour
 
     ArrayList openNodes = new ArrayList();
     ArrayList closedNodes = new ArrayList();
+    ArrayList fuelStations = new ArrayList();
+    ArrayList oilStations = new ArrayList();
 
     public ArrayList FindPath(Node start, Node end)
     {
@@ -28,6 +30,8 @@ public class Grid : MonoBehaviour
         openNodes.Clear();
         openNodes.Add(start);
         closedNodes.Clear();
+        fuelStations.Clear();
+        oilStations.Clear();
 
         foreach (Node n in grid)
         {
@@ -167,14 +171,17 @@ public class Grid : MonoBehaviour
                 if (gridLayout[x, y] == 1)
                 {
                     GameObject obj = Instantiate(trumpWall, new Vector3(x, 0, y), new Quaternion());
+                    obj.transform.parent = transform;
                 }
                 if (gridLayout[x, y] == 2)
                 {
                     GameObject obj = Instantiate(refillStation, new Vector3(x, 0, y), new Quaternion());
+                    fuelStations.Add(obj);
                 }
                 if (gridLayout[x, y] == 3)
                 {
                     GameObject obj = Instantiate(oilStation, new Vector3(x, 0, y), new Quaternion());
+                    oilStations.Add(obj);
                 }
                 if (gridLayout[x, y] == 4)
                 {
@@ -228,7 +235,6 @@ public class Grid : MonoBehaviour
         }
         return;
     }
-
 
     void Start()
     {

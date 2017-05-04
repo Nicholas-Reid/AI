@@ -13,6 +13,10 @@ public class Agent : MonoBehaviour
 
     public MyNavMeshAgent navAgent;
 
+    public float fuelNeed = 0;
+    public float oilNeed = 0;
+
+
     // Use this for initialization
     void Start()
     {
@@ -30,14 +34,25 @@ public class Agent : MonoBehaviour
         if (best != currentAction)
         {
             if (currentAction)
+            {
                 currentAction.Exit(this);
+            }
+                      
             currentAction = best;
             if (currentAction)
+            {
                 currentAction.Enter(this);
+            }          
         }
         // update the current action
         if (currentAction)
+        {
             currentAction.UpdateAction(this);
+        }
+
+        fuelNeed += 0.005f;
+        oilNeed += 0.001f;
+
     }
     // checks all our available actions and evaluates each one, getting the best
     Action GetBestAction()
